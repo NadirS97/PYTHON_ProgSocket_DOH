@@ -164,7 +164,7 @@ while data:
       trame=trame+struct.pack(">H",0)
       trame=trame+struct.pack(">H",0)
       splitAnswer=answer.split(' ')
-      for c in splitname:
+      for c in splitAnswer:
         trame=trame+struct.pack("B",len(c))
         for l in c:
           trame=trame+struct.pack("c",l)
